@@ -7,7 +7,7 @@
 
 ## Introduction
 
-This module adds a `[BuyNow][/BuyNow]` shortcode to the SilverStripe CMS which can integrate with chec.io
+This module adds a `[BuyNow][/BuyNow]` shortcode to the SilverStripe CMS which can integrate with [chec.io](https://chec.io)
 
 ## Requirements
 
@@ -21,6 +21,12 @@ This module adds a `[BuyNow][/BuyNow]` shortcode to the SilverStripe CMS which c
  ```sh
  $ composer require creative-commoners/silverstripe-checkio-integration
  ```
+ 
+ ### Loading the chec.io javascript
+ 
+ This extension automatically tries to load the chec.io javascript file, but for some reason should your active template block requirements, `ChecIOExtension::getChecIOJs()` fetches and loads this 
+ javascript content inline for you. Placing this before the closing body tag (e.g. `$ChecIOJs</body>`) in your mysite themes templates/Page.ss ensures that it always
+ gets loaded quickly.
 
 ## Maintainer
 

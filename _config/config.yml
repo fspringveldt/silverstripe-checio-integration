@@ -4,3 +4,10 @@ After:
   - 'framework/*'
   - 'cms/*'
 ---
+
+ChecIOShortcode:
+  third-party-url: https://checkout.chec.io
+  third-party-js: https://chec-cdn.s3.amazonaws.com/js/embed.js
+SiteTree:
+  extensions:
+    - ChecIOExtension

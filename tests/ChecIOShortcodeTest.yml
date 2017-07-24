@@ -1,0 +1,5 @@
+Page:
+  test:
+    URLSegment: test-page
+    Title: Test Page
+    Content: "Click here to buy: [BuyNowButton,product-id=1]Buy Now[/BuyNowButton]"

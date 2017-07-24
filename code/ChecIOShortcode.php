@@ -1,6 +1,6 @@
 <?php
 
-class ChecIOShortCode extends SiteTree
+class ChecIOShortcode extends SiteTree
 {
     private static $casting = array(
         'BuyNowButton' => 'HTMLText'
@@ -17,7 +17,9 @@ class ChecIOShortCode extends SiteTree
     public static function BuyNowButton($arguments, $content = null, $parser = null, $tagName)
     {
         if ($id = $arguments['product-id']) {
-            return "<a href=\"https://checkout.chec.io/{$id}\" data-chec-product-id=\"{$id}\">{$content}</a>";
+            $id = Convert::html2raw($id);
+            $siteURL = self::config()->get('third-party-url');
+            return "<a href=\"$siteURL/{$id}\" data-chec-product-id=\"{$id}\">{$content}</a>";
         }
         return '';
     }
