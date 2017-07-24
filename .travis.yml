@@ -25,4 +25,4 @@ before_script:
   - cd ~/build/ss
 
 script:
-  - vendor/bin/phpunit silverstripe-checkio-integration/tests
+  - vendor/bin/phpunit checkio-integration/tests

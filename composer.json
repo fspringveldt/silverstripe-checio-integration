@@ -1,5 +1,5 @@
 {
-    "name": "silverstripe/checkio",
+    "name": "creative-commoners/checio-integration",
     "description": "A SilverStripe module which integrates with chec.io.",
     "type": "silverstripe-module",
     "keywords": [
