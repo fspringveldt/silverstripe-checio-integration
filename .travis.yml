@@ -4,18 +4,19 @@ sudo: false
 
 language: php
 
-env:
-  global:
-    - DB=MYSQL
-    - CORE_RELEASE=3.6
-
 matrix:
   fast_finish: true
   include:
+    - php: 5.3
+      env: DB=MYSQL CORE_RELEASE=3
+    - php: 5.4
+      env: DB=MYSQL CORE_RELEASE=3
+    - php: 5.5
+      env: DB=MYSQL CORE_RELEASE=3
     - php: 5.6
-      env: DB=MYSQL CORE_RELEASE=3.6
+      env: DB=MYSQL CORE_RELEASE=3
     - php: 7.1
-      env: DB=MYSQL CORE_RELEASE=3 COVERAGE="--coverage-clover=coverage.xml"
+      env: DB=MYSQL CORE_RELEASE=3
 
 before_script:
   - composer self-update || true
@@ -24,11 +25,4 @@ before_script:
   - cd ~/build/ss
 
 script:
-  - vendor/bin/phpunit "$COVERAGE" silverstripe-checkio-integration/tests
-
-after_success:
-  - >
-    test "$COVERAGE" != ""
-    && mv coverage.xml ~/build/$TRAVIS_REPO_SLUG
-    && cd ~/build/$TRAVIS_REPO_SLUG
-    && bash <(curl -s https://codecov.io/bash)
+  - vendor/bin/phpunit silverstripe-checkio-integration/tests
