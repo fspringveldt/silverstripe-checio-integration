@@ -12,7 +12,7 @@ class ChecIOShortcodeTest extends FunctionalTest
     public function setUp()
     {
         parent::setUp();
-        $this->page = $this->objFromFixture('Page', 'test');
+        $this->page = $this->objFromFixture('SiteTree', 'test');
     }
 
     /**
