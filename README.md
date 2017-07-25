@@ -30,11 +30,16 @@ This module adds a `[BuyNow][/BuyNow]` shortcode to the SilverStripe CMS which c
  
 ## Usage
 
-**Basic shortcode usage**: add the following to the CMS content editor:
-`[BuyNow,data-chec-product-id="<your product id>"]<your label>[/BuyNow]`, replacing the parts between <> with your product info and your link label respectively.
+**Basic usage**: 
+
+`[BuyNowButton,data-chec-product-id="<your product id>"]<your label>[/BuyNowButton]`
+
+replacing the parts between <> with your product info and your link label respectively.
 
 **Advanced usage**:
+
 `[BuyNowButton,data-chec-product-id="<your product id>",class="btn"]<your label>[/BuyNowButton]`
+
 This example again adds the required product ID, but adds an extra class attribute to style your link with class .btn.
 
 ## Maintainer
