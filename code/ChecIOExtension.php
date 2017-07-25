@@ -18,14 +18,9 @@ class ChecIOExtension extends SiteTreeExtension
      */
     public function getChecIOJs()
     {
-        $cache = SS_Cache::factory('checio');
-        $cacheKey = 'js';
-        if (!$result = $cache->load($cacheKey)) {
-            $service = new RestfulService(ChecIOShortcode::config()->get('third-party-js'));
-            $response = $service->request('?' . mt_rand(0, 9));
-            $result = $response->getBody();
-            $cache->save($result, $cacheKey);
-        }
-        return sprintf('<script type="text/javascript">%s</script>', $result);
+        return sprintf(
+            '<script type="text/javascript" src="%s"></script>',
+            ChecIOShortcode::config()->get('third-party-js')
+        );
     }
 }

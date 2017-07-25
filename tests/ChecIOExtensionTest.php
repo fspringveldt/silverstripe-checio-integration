@@ -22,6 +22,6 @@ class ChecIOExtensionTest extends SapphireTest
     {
         $result = $this->page->getChecIOJs();
         $this->assertNotNull($result);
-        $this->assertContains('var add_iframe', $result);
+        $this->assertContains('<script type="text/javascript', $result);
     }
 }
