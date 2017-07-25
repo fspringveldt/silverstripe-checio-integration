@@ -23,7 +23,8 @@ class ChecIOShortcodeTest extends FunctionalTest
         $text = $this->page->Content;
         $parsed = ShortcodeParser::get_active()->parse($text);
         $this->assertContains(
-            '<a href="https://checkout.chec.io/1" data-chec-product-id="1" onclick="return false;">Buy Now</a>',
+            '<a href="https://checkout.chec.io/1" data-chec-product-id="1" '.
+                    'onclick="event.preventDefault ? event.preventDefault() : event.returnValue = false;">Buy Now</a>',
             $parsed
         );
     }
