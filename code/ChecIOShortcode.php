@@ -21,7 +21,7 @@ class ChecIOShortcode extends SiteTree
             $siteURL = self::config()->get('third-party-url');
 
             // Add an onclick attribute to prevent following the re-written link anchor.
-            $arguments['onclick'] = 'return false;';
+            $arguments['onclick'] = 'event.preventDefault ? event.preventDefault() : event.returnValue = false;';
 
             $link = "<a href=\"$siteURL/{$id}\"";
             // Add all arguments as-is as we could potentially be receiving css class styles
