@@ -26,4 +26,4 @@ before_script:
   - composer install
 
 script:
-  - vendor/bin/phpunit checkio-integration/tests/
+  - vendor/bin/phpunit checio-integration/tests/
