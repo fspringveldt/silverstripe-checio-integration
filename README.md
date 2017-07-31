@@ -11,9 +11,6 @@ This module adds a `[BuyNow][/BuyNow]` shortcode to the SilverStripe CMS which c
 
  * SilverStripe 3.2+
 
-## Features
-
-
 ## Installation
 
  ```sh
