@@ -1,7 +1,7 @@
 # SilverStripe chec.io integration
 
-[![Build Status](https://scrutinizer-ci.com/g/fspringveldt/silverstripe-checio-integration/badges/build.png?b=1.0)](https://scrutinizer-ci.com/g/fspringveldt/silverstripe-checio-integration/build-status/1.0)
-[![scrutinizer](https://scrutinizer-ci.com/g/fspringveldt/silverstripe-checio-integration/badges/quality-score.png?b=1.0)](https://scrutinizer-ci.com/g/fspringveldt/silverstripe-checio-integration/)
+[![Build Status](https://scrutinizer-ci.com/g/fspringveldt/silverstripe-checio-integration/badges/build.png?b=master)](https://scrutinizer-ci.com/g/fspringveldt/silverstripe-checio-integration/build-status/master)
+[![scrutinizer](https://scrutinizer-ci.com/g/fspringveldt/silverstripe-checio-integration/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/fspringveldt/silverstripe-checio-integration/)
 
 ## Introduction
 
