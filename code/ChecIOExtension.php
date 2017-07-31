@@ -11,7 +11,7 @@ class ChecIOExtension extends SiteTreeExtension
     }
 
     /**
-     * Tries to fetch the inline check.io JS from cache, failing which it gets it from the URL.
+     * Tries to fetch the inline chec.io JS from cache, failing which it gets it from the URL.
      * Should your theme clear requirements, placing this before the closing body tag ensures
      * that it always gets loaded.
      * @return string
