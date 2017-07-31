@@ -1,5 +1,5 @@
 {
-    "name": "creative-commoners/checio-integration",
+    "name": "fspringveldt/checio-integration",
     "description": "A SilverStripe module which integrates with chec.io.",
     "type": "silverstripe-module",
     "keywords": [
@@ -11,5 +11,10 @@
         "silverstripe/framework": "^3.2",
         "silverstripe/cms": "^3.2"
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
+    "extra": {
+        "branch-alias": {
+            "1.x-dev": "1.1.x-dev"
+        }
+    }
 }
