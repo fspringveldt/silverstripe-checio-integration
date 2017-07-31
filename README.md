@@ -9,7 +9,7 @@ This module adds a `[BuyNow][/BuyNow]` shortcode to the SilverStripe CMS which c
 
 ## Requirements
 
- * SilverStripe 3.6+
+ * SilverStripe 3.2+
 
 ## Features
 
