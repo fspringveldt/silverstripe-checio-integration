@@ -1,5 +1,5 @@
 {
-    "name": "creative-commoners/checio-integration",
+    "name": "fspringveldt/checio-integration",
     "description": "A SilverStripe module which integrates with chec.io.",
     "type": "silverstripe-module",
     "keywords": [
