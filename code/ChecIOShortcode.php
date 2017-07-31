@@ -4,10 +4,10 @@ class ChecIOShortcode extends Object
 {
     /**
      * ShortCode which adds a link to a chec.io buy now popup window
-     * @param $arguments
-     * @param null $content
-     * @param null $parser
-     * @param null $tagName
+     * @param array $arguments
+     * @param string $content
+     * @param ShortcodeParser $parser
+     * @param string $tagName
      * @return string
      */
     public static function BuyNowButton($arguments, $content = null, $parser = null, $tagName)
