@@ -1,9 +1,7 @@
 # SilverStripe chec.io integration
 
-[![Build Status](https://scrutinizer-ci.com/g/creative-commoners/silverstripe-checio-integration/badges/build.png?b=master)](https://scrutinizer-ci.com/g/creative-commoners/silverstripe-checio-integration/build-status/master)
-[![scrutinizer](https://scrutinizer-ci.com/g/creative-commoners/silverstripe-checio-integration/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/creative-commoners/silverstripe-checio-integration/)
-[![Code Coverage](https://codecov.io/gh/creative-commoners/silverstripe-checio-integration/branch/master/graph/badge.svg)](https://codecov.io/gh/creative-commoners/silverstripe-checio-integration)
-[![License](http://img.shields.io/packagist/l/creative-commoners/silverstripe-checio-integration.svg?style=flat-square)](LICENSE.md)
+[![Build Status](https://scrutinizer-ci.com/g/fspringveldt/silverstripe-checio-integration/badges/build.png?b=master)](https://scrutinizer-ci.com/g/fspringveldt/silverstripe-checio-integration/build-status/master)
+[![scrutinizer](https://scrutinizer-ci.com/g/fspringveldt/silverstripe-checio-integration/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/fspringveldt/silverstripe-checio-integration/)
 
 ## Introduction
 
@@ -19,7 +17,7 @@ This module adds a `[BuyNow][/BuyNow]` shortcode to the SilverStripe CMS which c
 ## Installation
 
  ```sh
- $ composer require creative-commoners/checio-integration
+ $ composer require fspringveldt/checio-integration
  ```
  
  ### Loading the chec.io javascript
@@ -41,7 +39,7 @@ replacing the parts between <> with your product info and your link text respect
 
 ## Maintainer
 
-Creative Commoners - creativecommoners@silverstripe.com
+Franco Springveldt - fspringveldt@gmail.com
 
 ## License
 
