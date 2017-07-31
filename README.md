@@ -25,22 +25,18 @@ This module adds a `[BuyNow][/BuyNow]` shortcode to the SilverStripe CMS which c
  ### Loading the chec.io javascript
  
  This extension automatically tries to load the chec.io javascript file, but for some reason should your active template block requirements, `ChecIOExtension::getChecIOJs()` fetches and loads this 
- javascript content inline for you. Placing this before the closing body tag (e.g. `$ChecIOJs</body>`) in your mysite themes templates/Page.ss ensures that it always
- gets loaded quickly.
+ javascript content inline for you. 
+ 
+ Placing this before the closing body tag (e.g. `$ChecIOJs</body>`) in either your mysite or themes' templates/Page.ss ensures that it always
+ gets loaded.
  
 ## Usage
 
 **Basic usage**: 
 
-`[BuyNowButton,data-chec-product-id="<your product id>"]<your label>[/BuyNowButton]`
+`[BuyNowButton,data-chec-product-id="<your product id>",class="btn"]<your button text>[/BuyNowButton]`
 
 replacing the parts between <> with your product info and your link label respectively.
-
-**Advanced usage**:
-
-`[BuyNowButton,data-chec-product-id="<your product id>",class="btn"]<your label>[/BuyNowButton]`
-
-This example again adds the required product ID, but adds an extra class attribute to style your link with class .btn.
 
 ## Maintainer
 
