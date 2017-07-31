@@ -1,4 +1,5 @@
 # See https://github.com/silverstripe/silverstripe-travis-support for setup details
+dist: precise
 
 sudo: false
 
