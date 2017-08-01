@@ -29,10 +29,9 @@ This module adds a `[BuyNow][/BuyNow]` shortcode to the SilverStripe CMS which c
 
 The below short code should be placed in your the content section of your CMS page editor window
 
-
 `[BuyNowButton,data-chec-product-id="<your product id>",class="btn"]<your button text>[/BuyNowButton]`
 
-replacing the parts between <> with your product info and your link text respectively.
+replacing `<your product id>` with your chec.io product id and `<your button text>` with the text you want displayed in your button/link.
 
 ## Maintainer
 
