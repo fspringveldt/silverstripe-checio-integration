@@ -7,7 +7,9 @@ class ChecIOExtension extends SiteTreeExtension
      */
     public function contentcontrollerInit()
     {
-        Requirements::javascript(ChecIOShortcode::config()->get('third-party-js'));
+        if ($jsPath = ChecIOShortcode::config()->get('third-party-js')) {
+            Requirements::javascript($jsPath);
+        }
     }
 
     /**
@@ -18,9 +20,9 @@ class ChecIOExtension extends SiteTreeExtension
      */
     public function getChecIOJs()
     {
-        return sprintf(
-            '<script type="text/javascript" src="%s"></script>',
-            ChecIOShortcode::config()->get('third-party-js')
-        );
+        if ($jsPath = ChecIOShortcode::config()->get('third-party-js')) {
+            return sprintf('<script type="text/javascript" src="%s"></script>', $jsPath);
+        }
+        return '';
     }
 }
