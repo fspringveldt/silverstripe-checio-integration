@@ -14,10 +14,8 @@ class ChecIOShortcode extends Object
     {
         if (isset($arguments['data-chec-product-id'])) {
             $id = Convert::raw2att($arguments['data-chec-product-id']);
+            unset($arguments['data-chec-product-id']);
             $siteURL = self::config()->get('third-party-url');
-
-            // Add an onclick attribute to prevent following the re-written link anchor.
-            $arguments['onclick'] = 'event.preventDefault ? event.preventDefault() : event.returnValue = false;';
 
             $link = "<a href=\"$siteURL/{$id}\"";
             // Add all arguments as-is as we could potentially be receiving css class styles
