@@ -24,4 +24,14 @@ class ChecIOExtensionTest extends SapphireTest
         $this->assertNotNull($result);
         $this->assertContains('<script type="text/javascript', $result);
     }
+
+    /**
+     * Allow the JS to be disabled if desired
+     */
+    public function testGetChecIOJsIgnoresIfFalsy()
+    {
+        Config::inst()->update('ChecIOShortcode', 'third-party-js', '');
+        $result = $this->page->getChecIOJs();
+        $this->assertNotContains('<script type="text/javascript', $result);
+    }
 }
